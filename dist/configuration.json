@@ -1,0 +1,18 @@
+{
+    "PREFIX": "upin!",
+    "TOKEN": "ODA0MTc5NDY1Mzk5MDQyMDk4.YBIkfQ.MXLj4wXTkwc9OKHL0u9koUTyGB4",
+    "lavalink": {
+        "nodes": [{
+                "id": "aqua-lavalink",
+                "host": "13.212.62.90",
+                "port": 2333,
+                "password": "youshallnotpass"
+            }, {
+                "id": "raznar-lavalink",
+                "host": "sg-admin1.raznar.id",
+                "port": 10001,
+                "password": "raznargood"
+            }]
+    },
+    "secretAuthorization": "secretauthorization123{}\\//2019-+w@#!$"
+}
