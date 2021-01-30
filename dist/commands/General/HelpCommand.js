@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const discord_akairo_1 = require("discord-akairo");
 const discord_js_1 = require("discord.js");
 class HelpCommand extends discord_akairo_1.Command {
-    constructor() {
+    constructor(client) {
         super('help', {
             aliases: ['h', 'halp', 'hulp'],
             ratelimit: 3,
@@ -15,6 +15,7 @@ class HelpCommand extends discord_akairo_1.Command {
                 }],
             category: "general"
         });
+        this.client = client;
     }
     exec(message, { command }) {
         if (command) {
@@ -36,7 +37,7 @@ class HelpCommand extends discord_akairo_1.Command {
         for (const category of this.handler.categories.values()) {
             if (/default/gi.exec(category.id))
                 return;
-            embed.addField(category.id, category.filter(cmd => cmd.aliases.length > 0).map(cmd => `**\`${cmd.id}\`**`).join(" | "));
+            embed.addField(this.client.utility.toTitleCase(category.id), category.filter(cmd => cmd.aliases.length > 0).map(cmd => `**\`${cmd.id}\`**`).join(" | "));
         }
         return message.util.send(embed);
     }

@@ -27,6 +27,15 @@ export default class Util {
         return temp;
     }
 
+    public toTitleCase(str: string) {
+        return str.replace(
+          /\w\S*/g,
+          function(txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+          }
+        );
+      }
+
         public getRandomIndex() {
             return Math.floor(Math.random() * this.client.configuration.lavalink.nodes.length);
         }

@@ -1,9 +1,10 @@
 import { Command } from "discord-akairo";
 import type { Message } from "discord.js";
 import { MessageEmbed } from "discord.js";
+import type Upin from "../../structures/Upin";
 
 export default class HelpCommand extends Command {
-    constructor() {
+    constructor(public client: Upin) {
         super('help', {
             aliases: ['h', 'halp', 'hulp'],
             ratelimit: 3,
@@ -39,7 +40,7 @@ export default class HelpCommand extends Command {
 
         for (const category of this.handler.categories.values()) {
             if (/default/gi.exec(category.id)) return;
-            embed.addField(category.id, category.filter(cmd => cmd.aliases.length > 0).map(cmd => `**\`${cmd.id}\`**`).join(" | "));
+            embed.addField(this.client.utility.toTitleCase(category.id), category.filter(cmd => cmd.aliases.length > 0).map(cmd => `**\`${cmd.id}\`**`).join(" | "));
         }
         return message.util!.send(embed);
     }
