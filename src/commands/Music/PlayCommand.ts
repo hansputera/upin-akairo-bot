@@ -6,6 +6,7 @@ export default class PlayCommand extends Command {
     constructor(public client: Upin) {
         super('play', {
             aliases: ['play', 'p', 'forceplay'],
+            category: "music",
             args: [{
                 id: "track",
                 type: "string",

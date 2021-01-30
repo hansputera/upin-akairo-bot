@@ -12,7 +12,8 @@ class HelpCommand extends discord_akairo_1.Command {
                     id: "command",
                     type: "commandAlias",
                     default: null
-                }]
+                }],
+            category: "general"
         });
     }
     exec(message, { command }) {

@@ -15,7 +15,8 @@ class ExecCommand extends discord_akairo_1.Command {
                         retry: "Please enter bash command!"
                     }
                 }],
-            ownerOnly: true
+            ownerOnly: true,
+            category: "developer"
         });
     }
     exec(message, { argument }) {

@@ -5,6 +5,7 @@ class PlayCommand extends discord_akairo_1.Command {
     constructor(client) {
         super('play', {
             aliases: ['play', 'p', 'forceplay'],
+            category: "music",
             args: [{
                     id: "track",
                     type: "string",

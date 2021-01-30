@@ -9,7 +9,8 @@ export default class StopCommand extends Command {
             editable: false,
             clientPermissions: ['CONNECT', 'SPEAK'],
             userPermissions: ['CONNECT', 'SPEAK'],
-            channel: "guild"
+            channel: "guild",
+            category: "music"
         });
     }
     public async exec(message: Message) {

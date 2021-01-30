@@ -20,7 +20,8 @@ class PlayListCommand extends discord_akairo_1.Command {
                     id: "playlistName",
                     match: "rest"
                 }
-            ]
+            ],
+            category: "music"
         });
         this.client = client;
     }

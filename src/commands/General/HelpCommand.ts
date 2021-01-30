@@ -12,7 +12,8 @@ export default class HelpCommand extends Command {
                 id: "command",
                 type: "commandAlias",
                 default: null
-            }]
+            }],
+            category: "general"
         });
     }
 

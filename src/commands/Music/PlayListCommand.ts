@@ -21,7 +21,8 @@ export default class PlayListCommand extends Command {
                     id: "playlistName",
                     match: "rest"
                 }
-            ]
+            ],
+            category: "music"
         });
     }
 

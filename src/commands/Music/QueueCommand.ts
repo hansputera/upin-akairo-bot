@@ -9,7 +9,8 @@ export default class QueueCommand extends Command {
     constructor(public client: Upin) {
         super('queue', {
             aliases: ['queue', 'q'],
-            editable: true
+            editable: true,
+            category: "music"
         });
     }
 

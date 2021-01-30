@@ -8,7 +8,8 @@ class StopCommand extends discord_akairo_1.Command {
             editable: false,
             clientPermissions: ['CONNECT', 'SPEAK'],
             userPermissions: ['CONNECT', 'SPEAK'],
-            channel: "guild"
+            channel: "guild",
+            category: "music"
         });
         this.client = client;
     }

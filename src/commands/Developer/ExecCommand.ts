@@ -15,7 +15,8 @@ export default class ExecCommand extends Command {
                     retry: "Please enter bash command!"
                 }
             }],
-            ownerOnly: true
+            ownerOnly: true,
+            category: "developer"
         });
     }
 

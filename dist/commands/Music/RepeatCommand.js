@@ -6,7 +6,8 @@ class RepeatCommand extends discord_akairo_1.Command {
         super('repeat', {
             aliases: ['loop'],
             editable: false,
-            ratelimit: 3
+            ratelimit: 3,
+            category: "music"
         });
         this.client = client;
     }

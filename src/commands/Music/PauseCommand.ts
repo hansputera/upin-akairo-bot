@@ -8,7 +8,8 @@ export default class PauseCommand extends Command {
             aliases: ['pause'],
             editable: false,
             clientPermissions: ['CONNECT', 'SPEAK'],
-            userPermissions: ['CONNECT']
+            userPermissions: ['CONNECT'],
+            category: "music"
         });
     }
 

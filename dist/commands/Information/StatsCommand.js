@@ -13,7 +13,8 @@ class StatsCommand extends discord_akairo_1.Command {
                     id: "lava",
                     match: "flag",
                     flag: "--lavalink"
-                }]
+                }],
+            category: "information"
         });
         this.client = client;
     }

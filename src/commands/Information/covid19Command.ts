@@ -16,7 +16,8 @@ export default class covid19Command extends Command {
                     start: "Please enter country!",
                     retry: "Please enter country!"
                 }
-            }]
+            }],
+            category: "information"
         });
     }
 

@@ -15,7 +15,8 @@ class SayCommand extends discord_akairo_1.Command {
                         retry: "Say something!"
                     }
                 }],
-            clientPermissions: ['SEND_MESSAGES', 'MANAGE_MESSAGES']
+            clientPermissions: ['SEND_MESSAGES', 'MANAGE_MESSAGES'],
+            category: "general"
         });
     }
     exec(message, { say }) {

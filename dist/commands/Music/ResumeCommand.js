@@ -7,7 +7,8 @@ class ResumeCommand extends discord_akairo_1.Command {
             aliases: ['resume', 'continue'],
             editable: false,
             clientPermissions: ['CONNECT', 'SPEAK'],
-            userPermissions: ['CONNECT']
+            userPermissions: ['CONNECT'],
+            category: "music"
         });
         this.client = client;
     }

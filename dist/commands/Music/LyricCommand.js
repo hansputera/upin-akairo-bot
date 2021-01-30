@@ -21,7 +21,8 @@ class LyricCommand extends discord_akairo_1.Command {
                         retry: "Please enter song title!"
                     }
                 }
-            ]
+            ],
+            category: "music"
         });
     }
     async exec(message, { song }) {

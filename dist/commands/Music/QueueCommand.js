@@ -6,7 +6,8 @@ class QueueCommand extends discord_akairo_1.Command {
     constructor(client) {
         super('queue', {
             aliases: ['queue', 'q'],
-            editable: true
+            editable: true,
+            category: "music"
         });
         this.client = client;
     }

@@ -12,7 +12,8 @@ export default class AddTrackCommand extends Command {
             args: [{
                 id: "queries",
                 match: "separate"
-            }]
+            }],
+            category: "music"
         });
     }
 

@@ -10,7 +10,8 @@ class RemoveTrackCommand extends discord_akairo_1.Command {
             args: [{
                     id: "queries",
                     match: "separate"
-                }]
+                }],
+            category: "music"
         });
         this.client = client;
     }

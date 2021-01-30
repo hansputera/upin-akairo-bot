@@ -14,7 +14,8 @@ export default class StatsCommand extends Command {
                 id: "lava",
                 match: "flag",
                 flag: "--lavalink"
-            }]
+            }],
+            category: "information"
         });
     }
 

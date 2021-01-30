@@ -19,7 +19,8 @@ class covid19Command extends discord_akairo_1.Command {
                         start: "Please enter country!",
                         retry: "Please enter country!"
                     }
-                }]
+                }],
+            category: "information"
         });
     }
     async exec(message, { country }) {

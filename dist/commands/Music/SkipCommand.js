@@ -7,7 +7,8 @@ class SkipCommand extends discord_akairo_1.Command {
             editable: false,
             aliases: ['skip', 's'],
             clientPermissions: ['CONNECT', 'SPEAK'],
-            userPermissions: ['CONNECT']
+            userPermissions: ['CONNECT'],
+            category: "music"
         });
         this.client = client;
     }

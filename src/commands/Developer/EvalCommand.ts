@@ -8,6 +8,7 @@ export default class EvalCommand extends Command {
             aliases: ['ev', 'evaluate', 'eval'],
             ownerOnly: true,
             editable: true,
+            category: "developer",
             args: [{
                 id: "code",
                 match: "content",

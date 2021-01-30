@@ -15,7 +15,8 @@ export default class SayCommand extends Command {
                     retry: "Say something!"
                 }
             }],
-            clientPermissions: ['SEND_MESSAGES', 'MANAGE_MESSAGES']
+            clientPermissions: ['SEND_MESSAGES', 'MANAGE_MESSAGES'],
+            category: "general"
         });
     }
 

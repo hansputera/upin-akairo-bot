@@ -8,7 +8,8 @@ export default class SkipCommand extends Command {
             editable: false,
             aliases: ['skip', 's'],
             clientPermissions: ['CONNECT', 'SPEAK'],
-            userPermissions: ['CONNECT']
+            userPermissions: ['CONNECT'],
+            category: "music"
         });
     }
 

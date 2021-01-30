@@ -8,7 +8,8 @@ export default class ResumeCommand extends Command {
             aliases: ['resume', 'continue'],
             editable: false,
             clientPermissions: ['CONNECT', 'SPEAK'],
-            userPermissions: ['CONNECT']
+            userPermissions: ['CONNECT'],
+            category: "music"
         });
     }
 

@@ -16,7 +16,8 @@ class LoadTracksCommand extends discord_akairo_1.Command {
                     }
                 }
             ],
-            ratelimit: 1
+            ratelimit: 1,
+            category: "music"
         });
         this.client = client;
     }

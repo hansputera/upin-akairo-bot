@@ -8,6 +8,7 @@ class EvalCommand extends discord_akairo_1.Command {
             aliases: ['ev', 'evaluate', 'eval'],
             ownerOnly: true,
             editable: true,
+            category: "developer",
             args: [{
                     id: "code",
                     match: "content",

@@ -17,7 +17,8 @@ export default class LoadTracksCommand extends Command {
                     }
                 }
             ],
-            ratelimit: 1
+            ratelimit: 1,
+            category: "music"
         });
     }
 

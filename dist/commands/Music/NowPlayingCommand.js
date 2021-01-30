@@ -7,7 +7,8 @@ class NowPlayingCommand extends discord_akairo_1.Command {
         super('nowplaying', {
             aliases: ['np', 'nowplaying'],
             ratelimit: 3,
-            editable: true
+            editable: true,
+            category: "music"
         });
         this.client = client;
     }

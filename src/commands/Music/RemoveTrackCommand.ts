@@ -11,7 +11,8 @@ export default class RemoveTrackCommand extends Command {
             args: [{
                 id: "queries",
                 match: "separate"
-            }]
+            }],
+            category: "music"
         });
     }
 

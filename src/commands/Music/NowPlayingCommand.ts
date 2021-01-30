@@ -7,7 +7,8 @@ export default class NowPlayingCommand extends Command {
         super('nowplaying', {
             aliases: ['np', 'nowplaying'],
             ratelimit: 3,
-            editable: true
+            editable: true,
+            category: "music"
         });
     }
 

@@ -18,7 +18,8 @@ export default class LyricCommand extends Command {
                         retry: "Please enter song title!"
                     }
                 }
-            ]
+            ],
+            category: "music"
         });
     }
 

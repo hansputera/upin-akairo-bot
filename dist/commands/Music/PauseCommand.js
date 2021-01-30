@@ -7,7 +7,8 @@ class PauseCommand extends discord_akairo_1.Command {
             aliases: ['pause'],
             editable: false,
             clientPermissions: ['CONNECT', 'SPEAK'],
-            userPermissions: ['CONNECT']
+            userPermissions: ['CONNECT'],
+            category: "music"
         });
         this.client = client;
     }
