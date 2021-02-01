@@ -14,7 +14,6 @@ export default class PrayCommand extends Command {
                 type: "string",
                 match: 'rest',
                 prompt: {
-                    infinite: true,
                     start: "Please enter place name, (eg. Pandu Sanjaya)",
                     retry: "Please enter place name, (eg. Pandu Sanjaya)"
                 },
@@ -26,7 +25,9 @@ export default class PrayCommand extends Command {
 
     public async exec(message: Message, { place }: { place: string; }) {
         try {
+            await message.util!.reply('Please wait...');
             const { data } = await axios.get('https://sholat.kekmareborn.ga/cari/' + encodeURIComponent(place));
+            
             if (!data.result) return message.util!.send('I can\'t find that place!');
             
             const result = data.result[0];

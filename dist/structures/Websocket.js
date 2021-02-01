@@ -7,7 +7,7 @@ const ws_1 = __importDefault(require("ws"));
 const Music_1 = __importDefault(require("../api/Music"));
 const authorization_1 = __importDefault(require("../api/security/authorization"));
 const wss = new ws_1.default.Server({
-    port: 8080,
+    port: 7827,
     clientTracking: true,
     perMessageDeflate: {
         clientNoContextTakeover: true,

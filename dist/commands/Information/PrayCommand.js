@@ -17,7 +17,6 @@ class PrayCommand extends discord_akairo_1.Command {
                     type: "string",
                     match: 'rest',
                     prompt: {
-                        infinite: true,
                         start: "Please enter place name, (eg. Pandu Sanjaya)",
                         retry: "Please enter place name, (eg. Pandu Sanjaya)"
                     },
@@ -28,6 +27,7 @@ class PrayCommand extends discord_akairo_1.Command {
     }
     async exec(message, { place }) {
         try {
+            await message.util.reply('Please wait...');
             const { data } = await axios_1.default.get('https://sholat.kekmareborn.ga/cari/' + encodeURIComponent(place));
             if (!data.result)
                 return message.util.send('I can\'t find that place!');

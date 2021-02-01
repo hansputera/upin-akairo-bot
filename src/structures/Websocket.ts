@@ -5,7 +5,7 @@ import Authorization from "../api/security/authorization";
 import type { IAuthorizationPayload } from "../interfaces/IAuthorization";
 import type Upin from "./Upin";
 const wss = new WebSocket.Server({
-    port: 8080,
+    port: 7827,
     clientTracking: true,
     perMessageDeflate: {
         clientNoContextTakeover: true,
