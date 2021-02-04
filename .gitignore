@@ -1,3 +1,4 @@
 node_modules/
 src/configuration.json
 src/structures/Database.ts
+dist/
